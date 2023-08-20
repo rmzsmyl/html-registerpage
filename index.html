@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: yellow;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        .container {
+            background-color: white;
+            padding: 60px;
+            border-radius: 100px;
+        }
+        .register-form {
+            max-width: 500px;
+            margin: 0 auto;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+            font-weight: bold;        
+        }
+        input, select, option {
+            width: 100%;
+            padding: 5px;
+            margin-top: 10px;
+            border: 1px solid black;
+            border-radius: 50px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: yellow;
+            border: none;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: gray;
+        }
+    </style>
+    <title>Register Page</title>
+</head>
+<body>      
+            <div class="container">
+            <form class="register-form">
+            <h2>Qeydiyyat forumu</h2>
+            <label for="firstName">Adınız</label>
+            <input type="text" id="firstName" name="firstName" required>
+            <label for="lastName">Soyadınız</label>
+            <input type="text" id="lastName" name="lastName" required>
+            <label for="birthDate">Doğum Tarixi</label>
+            <input type="date" id="birthDate" name="birthDate" required>
+            <label for="email">Emailiniz</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phoneNumber">Telefon Nömrəsi</label>
+            <select id="countryCode" name="countryCode">
+            <option value="+994">+994 (Azerbaycan)</option>
+            <option value="+994">+90 (Türkiyə)</option>
+            </select>
+            <select id="phoneCode" name="phoneCode">
+            <option value="10">10</option>
+            <option value="50">50</option>
+            <option value="51">51</option>
+            <option value="55">55</option>
+            <option value="60">60</option>
+            <option value="70">70</option>
+            <option value="77">77</option>
+            <option value="99">99</option>
+            </select>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required pattern="[0-9]{1,7}">
+            <button type="submit"><a href="/Users/Ramiz/Desktop/Register/forum.html">Qeydiyyat ol</a></button>
+        </form>
+    </div>
+</body>
+</html>
